@@ -1,6 +1,10 @@
 # uran_test2x17
 
 ## Test 1
+-  #### For init project
+```javascript
+npm i
+```
 -  #### For run project
 ```javascript
 gulp dev 
