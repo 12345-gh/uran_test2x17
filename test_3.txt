@@ -1,0 +1,28 @@
+- FlickrPhotoDemoApp\index.js - нужно перенести в папку src или server
+- app\icons поместить в папку app\img\icons
+- app\style переименовать во styles
+- app\js/assets сделать через node_modules
+- app\js\app.js
+	1) вынести функцию flickrRouter в файл on_config.js
+	2) вынести функцию setupSession в файл on_run.js
+	3) в функции flickrRouter в роуте '/:id' вынести controller в файл.
+- app\js\app_controller.js
+	1) переместить в папку controllers и переименовать файл в flickr.ctrl.js
+	2) использовать arrow functions вместо function
+	3) вынести в отдельный сервис все что связано с обращением к сервису Flickr, например, метод Flickr.search()
+	4) не использовать jQuery в контроллере, например, $('.photoModal').modal('hide'); Необходимо вынести в директиву такой функционал.
+	5) изменить let на var
+	6) angular.forEach($scope.photos, function (value, index){} изменить на .map
+- app\js\services.js
+	1) переместить в папку services и переименовать файл в flickr.service.js
+	2) self.api_key, self.base_url - вынести в константы
+	3) if ((search != null && search.length > 0)) {} изменить на if (!!search) {}
+- app\templates переименовать во views
+- app\templates\home.html
+	- photoModal в отдельный view файл
+	- flickr-photos в отдельную директиву
+	- pagination в отдульную директиву
+	- форму поиска в отдельную директиву
+	- search(text) добавить debounce и валидацию
+	- Log in / Log out в отдульную директиву
+	
