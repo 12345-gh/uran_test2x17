@@ -31,7 +31,7 @@ h3{
     padding: 20px;
 }
 
-.container #start-camera{
+.container .start-camera{
     display: none;
     border-radius: 3px;
     max-width: 400px;
@@ -44,7 +44,7 @@ h3{
     text-align: center;
 }
 
-.container video#camera-stream{
+.container video.camera-stream{
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +53,7 @@ h3{
     display: none;
 }
 
-.container #error-message{
+.container .error-message{
     width: 100%;
     background-color: #ccc;
     color: #9b9b9b;
@@ -101,7 +101,7 @@ h3{
     font-size: 18px;
 }
 
-.container .controls #take-photo i{
+.container .controls .take-photo i{
     font-size: 32px;
 }
 
@@ -109,8 +109,8 @@ h3{
     display: none;
 }
 
-.container video#camera-stream.visible,
-.container #error-message.visible
+.container video.camera-stream.visible,
+.container .error-message.visible
 {
     display: block;
 }
@@ -123,7 +123,7 @@ h3{
 
 
 @media(max-width: 1000px){
-    .container #start-camera.visible{
+    .container .start-camera.visible{
         display: block;
     }
 
@@ -131,14 +131,14 @@ h3{
         font-size: 16px;
     }
 
-    .container .controls #take-photo i{
+    .container .controls .take-photo i{
         font-size: 24px;
     }
 }
 
 
 @media(max-width: 600px){
-    .container #error-message{
+    .container .error-message{
         padding: 80px 50px;
         font-size: 18px;
     }
@@ -147,7 +147,7 @@ h3{
         font-size: 12px;
     }
 
-    .container .controls #take-photo i{
+    .container .controls .take-photo i{
         font-size: 18px;
     }
 }

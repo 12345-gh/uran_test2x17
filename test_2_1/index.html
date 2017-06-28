@@ -9,7 +9,7 @@
 
 	<title>Camera API</title>
 
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<meta id="theme-color" name="theme-color" content="#37474F">
 	<link rel="manifest" href="manifest.json">
 
@@ -21,13 +21,13 @@
 
 <div class="container">
 
-	<a href="#" id="start-camera" class="visible">Touch here to start the app.</a>
-	<video muted id="camera-stream"></video>
+	<a href="#" class="start-camera visible">Touch here to start the app.</a>
+	<video muted class="camera-stream"></video>
 
-	<p id="error-message"></p>
+	<p class="error-message"></p>
 
 	<div class="controls">
-		<a href="#" id="take-photo" title="Make screenshot">Make screenshot</a>
+		<a href="#" class="take-photo" title="Make screenshot">Make screenshot</a>
 	</div>
 
 	<!-- Hidden canvas element. Used for taking snapshot of video. -->
@@ -35,8 +35,8 @@
 
 </div>
 
-
-<script src="./assets/js/script.js"></script>
+<script src="js/camera-api.js"></script>
+<script src="js/init.js"></script>
 
 </body>
 </html>
