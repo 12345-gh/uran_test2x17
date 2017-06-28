@@ -20,3 +20,12 @@ $ yarn install
 $ npm run build
 ```
 
+For test...
+
+```sh
+$ npm install -g karma-cli
+$ karma start
+or
+$ npm run test
+```
+

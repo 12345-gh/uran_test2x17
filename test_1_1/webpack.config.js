@@ -98,13 +98,13 @@ module.exports = {
 	},
 
 	plugins: [
-		new webpack.optimize.CommonsChunkPlugin({ // The output files will not have modules loaded 2 or more times
-			name: "commons",                        // it will be located in commons.js
-			filename: "./js/commons.js",
-			// async: true,
-			// children: true,
-			minChunks: Infinity
-		}),
+		// new webpack.optimize.CommonsChunkPlugin({ // The output files will not have modules loaded 2 or more times
+		// 	name: "commons",                        // it will be located in commons.js
+		// 	filename: "./js/commons.js",
+		// 	// async: true,
+		// 	// children: true,
+		// 	minChunks: Infinity
+		// }),
 		new ExtractTextPlugin('./css/style.css'),
 	],
 
