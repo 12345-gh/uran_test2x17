@@ -9,6 +9,7 @@ function maskDirective() {
 					return attrs.mask;
 				},
 				() => {
+					debugger;
 					if (model.$viewValue !== null) {
 						model.$viewValue = formatByMask(String(model.$viewValue).replace(/\D/g, ''));
 						el.val(model.$viewValue);
@@ -17,10 +18,12 @@ function maskDirective() {
 			);
 
 			model.$formatters.push((value) => {
+				debugger;
 				return value === null ? '' : formatByMask(String(value).replace(/\D/g, ''));
 			});
 
 			model.$parsers.push((value) =>  {
+				debugger;
 				model.$viewValue = formatByMask(value);
 				let modelValue = String(value).replace(/\D/g, '');
 				el.val(model.$viewValue);
@@ -28,6 +31,7 @@ function maskDirective() {
 			});
 
 			let formatByMask = (val) => {
+				debugger;
 				let format = attrs.mask,
 					arrFormat = format.split('|');
 
