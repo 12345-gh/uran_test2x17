@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Camera API</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+	<meta id="theme-color" name="theme-color" content="#37474F">
+	<link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+
+
+<h3>Camera API ScreenShot Maker</h3>
+
+<div class="container">
+
+	<a href="#" class="start-camera visible">Touch here to start the app.</a>
+	<video muted class="camera-stream"></video>
+
+	<p class="error-message"></p>
+
+	<div class="controls">
+		<a href="#" class="take-photo" title="Make screenshot">Make screenshot</a>
+	</div>
+
+	<!-- Hidden canvas element. Used for taking snapshot of video. -->
+	<canvas></canvas>
+
+</div>
+
+<script src="js/camera-api.js"></script>
+<script src="js/navigator-api.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>

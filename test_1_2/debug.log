@@ -1,0 +1,3 @@
+[0628/182719.743:ERROR:process_reader_win.cc(142)] SuspendThread: Отказано в доступе. (0x5)
+[0628/182719.745:ERROR:exception_snapshot_win.cc(87)] thread ID 6708 not found in process
+[0628/182719.745:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
