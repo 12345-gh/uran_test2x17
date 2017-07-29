@@ -14,7 +14,7 @@ gulp dev
 gulp test
 ```
 
-## Test 1_1
+## Test 1_1 / Test 1_2
 ### Installation
 
 Dillinger requires [Node.js](https://nodejs.org/) v7+ to run.
@@ -42,20 +42,12 @@ or
 $ npm run test
 ```
 
-## Test 2
+## Test 2 / Test 2_1 / Test 2_2
 ```javascript
-run \uran_test2x17\test_2\index.html
+run \uran_test2x17\test_2_x\index.html
 ```
 > In Firefox you can run without local server.
 > In Google Chrome for webcam need local server, like WebStorm > View > Open in Browser > Google Chrome
-
-## Test 2_1
-```javascript
-run \uran_test2x17\test_2_1\index.html
-```
-> In Firefox you can run without local server.
-> In Google Chrome for webcam need local server, like WebStorm > View > Open in Browser > Google Chrome
-
 
 ## Test 3
 ```javascript
